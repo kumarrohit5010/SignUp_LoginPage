@@ -59,6 +59,8 @@ body {
   padding: 40px 28px;
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
+  scrollbar-width: thin;
 }
 
 .form h2 {
@@ -186,20 +188,32 @@ input[type="submit"]:hover {
 
 @media (max-width: 400px) {
   .box {
-    min-height: 560px;
+    min-height: 520px;
   }
 
   .form h2 {
     font-size: 1.15rem;
   }
 
+  .form {
+    padding: 24px 16px;
+  }
+
+  .inputbox {
+    margin-top: 16px;
+  }
+
   .inputbox input {
-    padding: 18px 10px 9px;
+    padding: 16px 10px 8px;
   }
 
   .inputbox span,
   .link a,
   .link button {
     font-size: 0.95rem;
+  }
+
+  .link {
+    gap: 8px;
   }
 }
