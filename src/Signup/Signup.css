@@ -123,14 +123,22 @@ body {
   margin-top: 10px;
 }
 
-.link a {
+.link a,
+.link button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
   text-decoration: none;
   color: #8f8f8f;
   transition: 0.5s;
 }
 
 .link a:hover,
-.link a:nth-child(2) {
+.link button:hover,
+.link a:nth-child(2),
+.link button:nth-child(2) {
   color: #7f66ff;
 }
 
@@ -190,7 +198,8 @@ input[type="submit"]:hover {
   }
 
   .inputbox span,
-  .link a {
+  .link a,
+  .link button {
     font-size: 0.95rem;
   }
 }

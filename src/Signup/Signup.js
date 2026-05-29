@@ -36,8 +36,8 @@ export default function SignupForm({ onBack }) {
         </div>
 
         <div className="link ">
-          <a href="#">Already have an account?</a>
-          <a href="#" onClick={(e) => { e.preventDefault(); onBack && onBack(); }}>Sign In</a>
+          <button type="button">Already have an account?</button>
+          <button type="button" onClick={() => onBack && onBack()}>Sign In</button>
         </div>
 
         <input type="submit" value="Register" />

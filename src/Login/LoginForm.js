@@ -38,8 +38,8 @@ export default function LoginForm() {
         </div>
 
         <div className="link">
-          <a href="#">Forget Password</a>
-          <a href="#" onClick={(e) => { e.preventDefault(); setView('signup'); }}>Sign Up</a>
+          <button type="button">Forget Password</button>
+          <button type="button" onClick={() => setView('signup')}>Sign Up</button>
         </div>
 
         <input type="submit" value="Login" />
